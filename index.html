@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo">Jonathan Diaz</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Jonathan Diaz</div>
+            <div class="hamburger-menu">    
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic.png" alt="Jonathan Diaz profile picture"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello, I'm</p>
+                <h1 class="title">Jonathan Diaz</h1>
+                <p class="section__text__p2">Cloud Engineer</p>
+                <div class="btn-container">
+                    <button 
+                        class="btn btn-color-2" 
+                        onclick="window.open('./assets/JRD_Resume.pdf')"
+                        >
+                        Download CV
+                    </button>
+                    <button 
+                        class="btn btn-color-1" 
+                        onclick="location.href='./#contact'"
+                            >Contact Info
+                    </button>
+                </div>
+                <div id="socials-container">
+                    <img 
+                        src="./assets/linkedin.png" 
+                        alt="My LinkedIn profile"
+                        class="icon" 
+                        onclick="location.href='https://www.linkedin.com/in/jonathan-rafael-diaz-61684427a/'" 
+                    />
+                    <img 
+                        src="./assets/github.png" 
+                        alt="My Github profile"
+                        class="icon" 
+                        onclick="location.href='https://www.github.com/Jonathan-R-Diaz'" 
+                    />
+                </div>
+            </div>            
+        </section>
+        <section id="about">
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+                <div class="section__pic-container">
+                    <img 
+                        src="./assets/about-pic.jpg" 
+                        alt="Profile picture"
+                        class="about-pic"
+                    />
+                </div>
+                <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img 
+                                src="./assets/experience.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <h3>Certifications</h3>
+                            <p>&bull; AWS Certified Cloud Practitioner<br />&bull; AWS Certified Developer</p>
+                        </div>
+                        <div class="details-container">
+                            <img 
+                                src="./assets/education.png" 
+                                alt="Education icon" 
+                                class="icon"
+                            />
+                            <h3>Education</h3>
+                            <p>Florida State University<br />B.S. Computer Science</p>
+                        </div>
+                    </div>   
+                    <div class="text-container">
+                        <p>As a passionate software developer, I specialize in crafting engaging digital experiences that leverage the power of cloud computing. 
+                            Through my portfolio, you'll discover carefully selected projects that showcase my expertise in web development, cloud architecture, 
+                            and project management. With 2 years of experience and a strong foundation in computer science, I bring a unique blend of theoretical
+                             knowledge and practical expertise to every project I undertake.</p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#experience'"
+            />
+        </section>
+        <section id="experience">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Experience</h1>
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Web Development & Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Javascript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CloudWatch</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>GitHub</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Object-Relational Mapping</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Infrastructure & Backend</h2>
+                    <div class="article-container">
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>C/C++</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Python, Bash</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>CloudWatch</h3>
+                                <p>Advanced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Docker</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>Cloud Formation</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img 
+                                src="./assets/checkmark.png" 
+                                alt="Experience icon" 
+                                class="icon"
+                            />
+                            <div>
+                                <h3>IAM, Security Infrastructure</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#projects'"
+            />
+        </section>
+        <section id="projects">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Projects</h1>
+            <div class="experience-details-container">
+                <div class="about-containers">
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/wip.jpg" 
+                            alt="Project 1"
+                            class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project 1</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'"
+                                >
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'"
+                                >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-container color-container">
+                        <div class="article-container">
+                            <img src="./assets/wip.jpg" 
+                            alt="Project 2"
+                            class="project-img">
+                        </div>
+                        <h2 class="experience-sub-title project-title">Project 2</h2>
+                        <div class="btn-container">
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'"
+                                >
+                                Github
+                            </button>
+                            <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com'"
+                                >
+                                Live Demo
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" 
+                alt="Arrow icon" 
+                class="icon arrow"
+                onclick="location.href='./#contact'"
+            />
+        </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                        src="./assets/email.png" 
+                        alt="Email icon"
+                        class="icon contact-icon email-icon"
+                    />
+                    <p><a href="mailto:jonathanrdiaz@outlook.com">jonathanrdiaz@outlook.com</a></p>
+                </div>
+                <div class="contact-info-container">
+                    <img 
+                        src="./assets/linkedin.png" 
+                        alt="LinkedIn icon"
+                        class="icon contact-icon"
+                    />
+                    <p><a href="https://www.linkedin.com/in/jonathan-rafael-diaz-61684427a/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2024 Jonathan Diaz. All Rights Reserved.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
